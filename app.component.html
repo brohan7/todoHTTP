@@ -1,0 +1,24 @@
+<app-todo-details></app-todo-details>
+<app-todo-list></app-todo-list>
+<table border="5">
+    <tr>
+      <th>Desc</th>
+      <th>Manf</th>
+      <th>Mission_Id</th>
+      <th>Mission_Name</th>
+      <th>Payload_Id</th>
+      <th>Twitter</th>
+      <th>Website</th>
+      <th>Wikipedia</th>
+    </tr>
+    <tr *ngFor="let user of userData">
+      <td>{{user.description}}</td>
+      <td>{{user.manufacturers}}</td>
+      <td>{{user.mission_id}}</td>
+      <td>{{user.mission_name}}</td>
+      <td>{{user.payload_ids}}</td>
+      <td>{{user.twitter}}</td>
+      <td>{{user.website}}</td>
+      <td>{{user.wikipedia}}</td>
+    </tr>
+  </table>
